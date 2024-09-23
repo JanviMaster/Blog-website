@@ -1,14 +1,53 @@
-body{
-  background-color: aquamarine;
-}
+
 .App {
   text-align: center;
 }
  
-Bloglist div{
+.Bloglist div {
   display: flex;
   flex-direction: row;
 
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+} 
+ .carousel-item img {
+  padding: 25px;
+  width: 100%;
+  height: auto;
+  max-height: 400px;
+ object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-item img {
+    max-height: 250px; 
+  }
+}
+
+.body {
+  background-color:rgb(10, 93, 93) ; 
+  color:white;
+  padding: 20px;
+}
+.App {
+  text-align: center;
+}
+
+.Bloglist div {
+  display: flex;
+  flex-direction: row;
 }
 
 .App-header {
@@ -25,3 +64,4 @@ Bloglist div{
 .App-link {
   color: #61dafb;
 }
+

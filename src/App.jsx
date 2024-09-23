@@ -1,7 +1,7 @@
 import './App.css';
 import Footer from './components/Footer'; 
 import CreateBlog from './components/CreateBlog'; 
-import BlogPostCard from './components/BlogPostCard';
+import BlogPost from './components/BlogPost';
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import BlogPage from './pages/BlogPage';
@@ -19,11 +19,13 @@ function App() {
           <Route path="/blogs" element={<BlogPage />} />
           <Route path="/create" element={<CreateBlog />} />
         </Routes>
-        <BlogPostCard/> 
+        <div className='body'>
+        <BlogPost/> 
         <CreateBlog/>
       
        <BlogPage/>
        <Home/>
+       </div>
        <Footer/>
       </Router>
       
